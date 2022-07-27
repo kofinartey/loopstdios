@@ -1,0 +1,24 @@
+.Header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+}
+.desktop_links {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .Header {
+    padding: 3rem 10%;
+  }
+  .desktop_links {
+    display: block;
+  }
+  .desktop_links a {
+    margin: 0 1rem;
+  }
+  .hamburger {
+    display: none;
+  }
+}
