@@ -1,0 +1,54 @@
+.Hero {
+  font-family: "Josefin Sans";
+  background: url("../../assets/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.Hero .wrapper {
+  width: 90%;
+}
+.Hero h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  padding: 2rem;
+  max-width: 20rem;
+  border: 2px solid white;
+  transition: all ease-in-out 0.3s;
+}
+
+@media only screen and (min-width: 48rem) {
+  .Hero {
+    background: url("../../assets/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Hero h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .Hero {
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+  }
+  .Hero .wrapper {
+    width: 70%;
+  }
+  .Hero h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    max-width: 40rem;
+  }
+}

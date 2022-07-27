@@ -1,19 +1,21 @@
 .Header {
-  background-color: rgb(197, 197, 197);
+  width: 100%;
+  /* background-color: rgb(197, 197, 197); */
   display: flex;
   justify-content: space-between;
-  padding: 3rem 1rem;
-  position: relative;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 .desktop_links {
   display: none;
 }
 .mobile_menu {
   transition: all ease-in-out 0.3s;
-  background-color: red;
   padding: 4rem 0;
   position: absolute;
-  top: -50rem;
+  top: -80rem;
   /* top: 0; */
   left: 0;
   right: 0;

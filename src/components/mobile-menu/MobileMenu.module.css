@@ -19,3 +19,13 @@
 .mobile_links a {
   padding: 1rem;
 }
+.mobile_links a:hover {
+  background-color: rgb(52, 52, 52);
+  transition: all ease-in-out 0.2s;
+}
+
+@media (min-width: 64rem) {
+  .MobileMenu {
+    display: none;
+  }
+}
