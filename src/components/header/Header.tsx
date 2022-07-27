@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MobileMenu from "../mobile-menu/MobileMenu";
 import logo from "../../assets/logo.svg";
 import hamburger from "../../assets/icon-hamburger.svg";
 import closeIcon from "../../assets/icon-close.svg";
@@ -11,6 +12,12 @@ function Header() {
     setShowMenu(!showMenu);
   };
 
+  const mobileMenuStyles = showMenu
+    ? {
+        top: "0",
+      }
+    : {};
+
   return (
     <header className={styles.Header}>
       <a href="#">
@@ -22,6 +29,10 @@ function Header() {
         <a href="#">Events</a>
         <a href="#">Production</a>
         <a href="#">Support</a>
+      </div>
+
+      <div className={styles.mobile_menu} style={mobileMenuStyles}>
+        <MobileMenu />
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
