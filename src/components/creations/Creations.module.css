@@ -1,4 +1,90 @@
 .Creations {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  width: 90%;
 }
 .Creations .top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  /* font-size: 2rem; */
+}
+.top button {
+  padding: 0.5rem 2rem;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid black;
+  display: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  transition: all ease-in-out 0.3s;
+}
+.top button:hover {
+  background-color: black;
+  color: white;
+}
+.creation {
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.creation img {
+  width: 100%;
+  transition: all ease-in 0.3s;
+}
+.creation .text {
+  font-size: 1.3rem;
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 7rem;
+}
+.creation:hover img {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.creation:hover .text {
+  color: black;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 48rem) {
+  .Creations .top {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top button {
+    display: block;
+  }
+  .creationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 5%;
+  }
+  .creation {
+    width: 30%;
+  }
+  .creation .text {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .wrapper {
+    width: 80%;
+  }
+  .creationsContainer {
+    gap: 2.6%;
+  }
+  .creation {
+    width: 23%;
+  }
 }
