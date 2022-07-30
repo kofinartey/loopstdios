@@ -8,7 +8,10 @@ function Creations() {
       <div className={styles.wrapper}>
         <div className={styles.top}>
           <h2>Our Creations</h2>
-          <button> See all</button>
+          <button className={`${styles.button} ${styles.button1}`}>
+            {" "}
+            See all
+          </button>
         </div>
         <div className={styles.creationsContainer}>
           {creationsData.map((creation) => (
@@ -27,6 +30,10 @@ function Creations() {
             </div>
           ))}
         </div>
+
+        <button className={`${styles.button} ${styles.button2}`}>
+          See all
+        </button>
       </div>
     </section>
   );

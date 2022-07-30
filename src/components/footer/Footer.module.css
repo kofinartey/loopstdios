@@ -1,0 +1,70 @@
+.Footer {
+  background-color: black;
+  color: white;
+}
+.wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+.first img {
+  width: 10rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.links a {
+  margin: 0.8rem 0;
+  font-size: 0.8rem;
+  transition: all ease-in-out 0.3s;
+}
+.links a:hover {
+  opacity: 0.5;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socials {
+  margin: 1rem 0;
+}
+.socials img {
+  margin: 0 0.3rem;
+  width: 1.5rem;
+}
+small {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 55%);
+}
+
+@media (min-width: 48rem) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+  .links a {
+    margin-right: 1rem;
+  }
+  .second {
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 64rem) {
+  .wrapper {
+    width: 80%;
+  }
+}

@@ -3,30 +3,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 6rem 0;
 }
 .wrapper {
   width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 .Creations .top {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
-  /* font-size: 2rem; */
 }
-.top button {
+.button {
   padding: 0.5rem 2rem;
   background-color: white;
   color: black;
   text-transform: uppercase;
   border: 1px solid black;
-  display: none;
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
+  cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
-.top button:hover {
+.button:hover {
   background-color: black;
   color: white;
+}
+.button1 {
+  display: none;
+}
+.button2 {
+}
+.creationsContainer {
+  margin: 2rem 0;
 }
 .creation {
   width: 100%;
@@ -61,8 +70,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  .top button {
+  .button1 {
     display: block;
+  }
+  .button2 {
+    display: none;
   }
   .creationsContainer {
     display: flex;
